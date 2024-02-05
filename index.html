@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="quiz">
+        <div class="container vh-100">
+            <div class="header">
+                <div class="headerContent animate__animated animate__bounceInDown">
+                    <h1>Quiz App</h1>
+                </div>
+            </div>
+            <div class="quizForm d-flex justify-content-center align-items-center">
+                <div
+                    class="box d-flex justify-content-center align-items-center flex-column animate__animated animate__fadeInBottomLeft">
+                    <select class="form-select py-3 m-3" id="categoryOptions" aria-label="Default select example">
+                        <option selected value="">Any Category</option>
+                        <option value="9">General Knowledge</option>
+                        <option value="21">Sports</option>
+                        <option value="19">Science: Mathematics</option>
+                        <option value="18">Science: Computers</option>
+                        <option value="23">History</option>
+                    </select>
+                    <select class="form-select py-3 m-3" id="difficultyOptions" aria-label="Default select example">
+                        <option value="" disabled selected>Choose Difficulty Level</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                    <input type="text" class="form-control py-3 m-3" id="questionNumber" placeholder="No. of Questions">
+                    <button type="button" class="btn py-2 m-3" id="startQuizBtn">Start</button>
+
+                </div>
+            </div>
+            <div
+                class="questions-container d-flex justify-content-center align-items-center animate__animated animate__fadeInBottomLeft">
+            </div>
+
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/question.js" type="module"></script>
+    <script src="js/quiz.js" type="module"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
